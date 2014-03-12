@@ -6,7 +6,10 @@
     = javascript_include_tag "application"
     = csrf_meta_tags
   %body
-    #header
     #wrap
-      = yield
-    #fotter
+      #header
+        = render partial: 'layouts/header'
+      .main-container
+        = yield
+      #footter
+        = render partial: 'layouts/footer'
