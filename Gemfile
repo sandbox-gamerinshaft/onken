@@ -40,4 +40,4 @@ gem 'jquery-rails'
 #UserAdd
 gem "bootstrap-sass"
 gem "haml-rails"
-gem "fontawesome-rails"
+gem "font-awesome-rails"
