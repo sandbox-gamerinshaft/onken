@@ -1,0 +1,20 @@
+#main-carousel.carousel.slide{"data-ride" => "carousel"}
+  / Indicators
+  %ol.carousel-indicators
+    %li.active{"data-slide-to" => "0", "data-target" => "#main-carousel"}
+    %li{"data-slide-to" => "1", "data-target" => "#main-carousel"}
+    %li{"data-slide-to" => "2", "data-target" => "#main-carousel"}
+  / Wrapper for slides
+  .carousel-inner
+    .item.active
+      =image_tag "sinkan-pop4.jpg", class: "top__images"
+      .carousel-caption
+    .item
+      =image_tag "sinkan-pop5.jpg", class: "top__images"
+    .item
+      =image_tag "sinkan-pop6.jpg", class: "top__images"
+  / Controls
+  %a.left.carousel-control{"data-slide" => "prev", href: "#main-carousel"}
+    %span.glyphicon.glyphicon-chevron-left
+  %a.right.carousel-control{"data-slide" => "next", href: "#main-carousel"}
+    %span.glyphicon.glyphicon-chevron-right
