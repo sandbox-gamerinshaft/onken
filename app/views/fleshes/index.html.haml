@@ -1,17 +1,20 @@
-%h1 Listing fleshes
-
-%table
-  %tr
-    %th
-    %th
-    %th
-
-  - @fleshes.each do |flesh|
-    %tr
-      %td= link_to 'Show', flesh
-      %td= link_to 'Edit', edit_flesh_path(flesh)
-      %td= link_to 'Destroy', flesh, :method => :delete, :data => { :confirm => 'Are you sure?' }
-
-%br
-
-= link_to 'New Flesh', new_flesh_path
+.fleshes-index
+  .main-container
+    .col-xs-3
+      #husen
+        .husen__item
+          %a{"data-toggle" => "tab", href: "#kyousitu"} 4/8 新歓教室ライブ
+        .husen__item
+          %a{"data-toggle" => "tab", href: "#hanami"} 4/12 お花見交流会
+        .husen__item
+          %a{"data-toggle" => "tab", href: "#syokuji"} 4/20 マック・ミスドの会
+        .husen__item
+          %a{"data-toggle" => "tab", href: "#hako"} 4/26 新歓箱ライブ
+    .col-xs-9
+      %h3
+        こっちがタブ
+      .tab-content
+        #kyousitu.tab-pane.fade.in.active 内容いち
+        #hanami.tab-pane.fade.in ないゆおに
+        #syokuji.tab-pane.fade.in ないゆおさん
+        #hako.tab-pane.fade.in ないひょうよん
