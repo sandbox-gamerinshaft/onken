@@ -2,14 +2,19 @@
   .main-container
     .col-xs-3
       #husen
-        .husen__item
-          %a{"data-toggle" => "tab", href: "#kyousitu"} 4/8 新歓教室ライブ
-        .husen__item
-          %a{"data-toggle" => "tab", href: "#hanami"} 4/12 お花見交流会
-        .husen__item
-          %a{"data-toggle" => "tab", href: "#syokuji"} 4/20 マック・ミスドの会
-        .husen__item
-          %a{"data-toggle" => "tab", href: "#hako"} 4/26 新歓箱ライブ
+        .row
+          .col-xs-12
+            %a.husen__item1.block{"data-toggle" => "tab", href: "#kyousitu"}
+              4/8 新歓教室ライブ
+          .col-xs-12
+            %a.husen__item2.block{"data-toggle" => "tab", href: "#hanami"}
+              4/12 お花見交流会
+          .col-xs-12
+            %a.husen__item3.block{"data-toggle" => "tab", href: "#syokuji"}
+              4/20 マック・ミスドの会
+          .col-xs-12
+            %a.husen__item4.block{"data-toggle" => "tab", href: "#hako"}
+              4/26 新歓箱ライブ
     .col-xs-9
       %h3
         こっちがタブ
