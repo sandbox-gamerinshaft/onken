@@ -1,4 +1,7 @@
 Onken::Application.routes.draw do
+  resources :fleshes
+
+
   resources :pages
 
 

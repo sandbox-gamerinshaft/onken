@@ -1,0 +1,17 @@
+%h1 Listing fleshes
+
+%table
+  %tr
+    %th
+    %th
+    %th
+
+  - @fleshes.each do |flesh|
+    %tr
+      %td= link_to 'Show', flesh
+      %td= link_to 'Edit', edit_flesh_path(flesh)
+      %td= link_to 'Destroy', flesh, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Flesh', new_flesh_path
