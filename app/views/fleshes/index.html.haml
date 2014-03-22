@@ -10,25 +10,40 @@
             %a.husen__item2.block{"data-toggle" => "tab", href: "#hanami"}
               4/12 お花見交流会
           .col-xs-12
-            %a.husen__item3.block{"data-toggle" => "tab", href: "#syokuji"}
+            %a.husen__item3.block{"data-toggle" => "tab", href: "#nakaniwa"}
+              4/15 中庭ライブ
+          .col-xs-12
+            %a.husen__item4.block{"data-toggle" => "tab", href: "#syokuji"}
               4/20 マックミスド会
           .col-xs-12
-            %a.husen__item4.block{"data-toggle" => "tab", href: "#hako"}
+            %a.husen__item5.block{"data-toggle" => "tab", href: "#hako"}
               4/26 新歓箱ライブ
     .col-xs-9
       .tab-content
         #kyousitu.tab-pane.fade.in.active
           .tape1.center
             = image_tag "tape.png"
+          .kyousitu1
+            = image_tag "kyousitu1.png"
           .thumbnail
             .jumbotron
-              %h1 新歓教室ライブ！
+              .break
               %p
                 新入生の皆さん、入学おめでとうございます！新歓ライブについてのお知らせです。音楽研究会は、演奏だけでなく、PAや照明にも力を入れているサークルです。
                 %br
                 たかが教室、されど教室・・・。教室でもここまで出来るんだぞという底力を見せてやります！是非お立ち会いください！
               %p
                 %a.btn.btn-primary.btn-lg{role: "button"} タイムテーブルを見る
+          .tape1-l.center
+            = image_tag "tape-l.png"
+          .sutaren2
+            = image_tag "sutaren2.png"
+          .onpu
+            = image_tag "onpu.png"
+          .butyou
+            = image_tag "butyou.png"
+
         #hanami.tab-pane.fade.in ないゆおに
+        #nakaniwa.tab-pane.fade.in なかにわ
         #syokuji.tab-pane.fade.in ないゆおさん
         #hako.tab-pane.fade.in ないひょうよん
